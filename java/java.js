@@ -109,58 +109,6 @@ let sorting=sortBtn.addEventListener("click",function(){
 
 
 
-//Task2...............................
-let tasksArray = [
-    ["Nathalie Nader Nabil", "Task 01", "Option 2"],
-    ["Youssef Mohamed Ahmed Mohamed Youssef", "Task 01", "Option 1"],
-    ["Salma Nasreldin", "Task 01", "Option 1"],
-    ["Engy Mostafa", "Task 01", "Option 1"],
-    ["Engy Mostafa", "Task 01", "Option 1"],
-    ["Engy ahmed mostafa ", "Task 01", "Option 1"],
-    ["Abdelhay Nader Abdelhay Abozayed", "Task 01", "Option 1"],
-    ["Abdelrahman Shemies", "Task 01", "Option 1"],
-    ["Alaa Ahmed", "Task 01", "Option 2"],
-    ["Youssef Fathy Mahmoud", "Task 01", "Option 1"],
-    ["Mark Bassem", "Task 01", "Option 1"],
-    ["Anas Ahmed", "Task 01", "Option 1"],
-    ["Adham Hesham", "Task 01", "Option 1"],
-    ["Mohamed Ahmed Fahmi", "Task 01", "Option 1"],
-    ["rola wafi", "Task 01", "Option 1"],
-    ["Moataz Youssef", "Task 01", "Option 2"],
-    ["Ahmad Salama", "Task 01", "Option 1"],
-    ["Mohamed Ahmed Fahmi", "Task 01", "Option 1"],
-    ["Ahmad Salama Abdelaziz", "Task 01", "Option 2"],
-    ["Kareem Ramzi El-Tahlawi", "Task 01", "Option 1"],
-    ["Alaa Ahmed", "Task 01", "Option 2"],
-    ["rola wafi", "Task 01", "Option 2"],
-    ["Mohamed Fahmi", "Task 01", "Option 1"],
-    ["Mohamed Fahmi", "Task 01", "Option 2"],
-    ["Alaa Ahmed", "Task 01", "Option 2"],
-    ["Abdelrahman Shemies", "Task 01", "Option 1"],
-    ["Nathalie Nader", "Task 01", "Option 1"],
-    ["Mariam Ahmed", "Task 01", "Option 1"],
-];
-
-
-let filterName=tasksArray.map(function(name){
-    return name[0];
-})
-
-for(let i=0;i<filterName.length;i++)
-{
-    for(let j=0;j<filterName.length;j++)
-    {
-        if(i===j)
-        {
-            continue;
-        }
-    if(filterName[i]===filterName[j])
-    {
-       filterName.splice(j,1);
-    }
-    }
-}
-console.log(filterName);
 
 
 
